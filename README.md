@@ -17,7 +17,9 @@ ASSISTANT_SMTP_SERVER - outgoing mail SMTP server
 
 You may also need to change the IMAP and the SMTP ports in the code (lines 19 and 23) to match yours.
 
-Currently the model uses GPT-3.5-TURBO from OpenAI (you'll need an OpenAI API key for it to work). If you have access to GPT-4, you can change line 103 accordingly for a higher quality assistant experience. Watch out for your API fees though. I also strongly suggest not publishing your assistant email broadly once you set it up and keeping it confidential to yourself and/or trusted parties only - anyone can query your assistant with that knowledge.
+Currently the model uses GPT-3.5-TURBO from OpenAI. You'll need an OpenAI API key for it to work. You'd place it in an OPENAI_API_KEY environment variable. 
+
+If you have access to GPT-4, you can change line 103 accordingly for a higher quality assistant experience. Watch out for your API fees though. I also strongly suggest not publishing your assistant email broadly once you set it up and keeping it confidential to yourself and/or trusted parties only - anyone can query your assistant with that knowledge.
 
 Finally, you'll need to set up a cron job and point it to the web address where you set up your script to run the code every few minutes. 
 
